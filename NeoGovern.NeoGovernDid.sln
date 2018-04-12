@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeoGovern.NeoGovernDid", "NeoGovern.NeoGovernDid\NeoGovern.NeoGovernDid.csproj", "{BA5D35CA-E9F6-4E95-AFAC-DB21C87D9806}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeoGovern.NeoGovernDid", "NeoGovern.NeoGovernDid\NeoGovern.NeoGovernDid.csproj", "{BA5D35CA-E9F6-4E95-AFAC-DB21C87D9806}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeoGovernNeogovernDidTests", "NeoGovernNeogovernDidTests\NeoGovernNeogovernDidTests.csproj", "{7E840E3F-34B3-445D-A451-E04B2D47545C}"
 EndProject
