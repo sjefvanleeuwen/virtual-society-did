@@ -1,6 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Net;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace NeoGovern.NeoGovernDid
 {
@@ -17,7 +16,7 @@ namespace NeoGovern.NeoGovernDid
         public IEnumerable<Service> Service { get; set; }
         [JsonProperty("authentication")]
         public IEnumerable<Authentication> Authentication { get; set; }
-        
+
     }
 
     public class PublicKey
@@ -32,7 +31,8 @@ namespace NeoGovern.NeoGovernDid
         public string PublicKeyPem { get; set; }
     }
 
-    public class Authentication {
+    public class Authentication
+    {
         [JsonProperty("type")]
         public string Type { get; set; }
         [JsonProperty("publicKey")]
