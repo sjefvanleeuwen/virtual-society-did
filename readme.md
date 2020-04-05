@@ -4,9 +4,9 @@
 <br/>
 
 
-# Self Sovereign Identities
+# Decentralized Identities
 
-This project contains the model for Sovereign identities using the DID specification.
+This project contains the model for Decentralized identities using the DID specification. https://www.w3.org/TR/did-core/
 
 ## Status
 
@@ -48,4 +48,52 @@ NIST can be found at: https://csrc.nist.gov/Projects/Post-Quantum-Cryptography/P
     SPHINCS+-Haraka: SPHINCS+-Haraka-128f-robust, SPHINCS+-Haraka-128f-simple, SPHINCS+-Haraka-128s-robust, SPHINCS+-Haraka-128s-simple, SPHINCS+-Haraka-192f-robust, SPHINCS+-Haraka-192f-simple, SPHINCS+-Haraka-192s-robust, SPHINCS+-Haraka-192s-simple, SPHINCS+-Haraka-256f-robust, SPHINCS+-Haraka-256f-simple, SPHINCS+-Haraka-256s-robust, SPHINCS+-Haraka-256s-simple
     SPHINCS+-SHA256: SPHINCS+-SHA256-128f-robust, SPHINCS+-SHA256-128f-simple, SPHINCS+-SHA256-128s-robust, SPHINCS+-SHA256-128s-simple, SPHINCS+-SHA256-192f-robust, SPHINCS+-SHA256-192f-simple, SPHINCS+-SHA256-192s-robust, SPHINCS+-SHA256-192s-simple, SPHINCS+-SHA256-256f-robust, SPHINCS+-SHA256-256f-simple, SPHINCS+-SHA256-256s-robust, SPHINCS+-SHA256-256s-simple
     SPHINCS+-SHAKE256: SPHINCS+-SHAKE256-128f-robust, SPHINCS+-SHAKE256-128f-simple, SPHINCS+-SHAKE256-128s-robust, SPHINCS+-SHAKE256-128s-simple, SPHINCS+-SHAKE256-192f-robust, SPHINCS+-SHAKE256-192f-simple, SPHINCS+-SHAKE256-192s-robust, SPHINCS+-SHAKE256-192s-simple, SPHINCS+-SHAKE256-256f-robust, SPHINCS+-SHAKE256-256f-simple, SPHINCS+-SHAKE256-256s-robust, SPHINCS+-SHAKE256-256s-simple
+```
+
+## Method-Specific DID URL Parameters
+
+DID Url parameters as described under paragraph 5.2.3 https://www.w3.org/TR/did-core/#method-specific-did-url-parameters in the W3C specification are implemented with preference to 
+**DID method namespaces** over method-specific parameters within the **did:neogov** namespace.
+Unique Identifiers are created by implementing the Universally Unique Identifier (UUID) as defined by [RFC4122] https://tools.ietf.org/html/rfc4122.
+in a 22 character alphanumeric format (short uuid).
+
+The following is prefered:
+
+*example*
+```
+did:neogov:consensus:vote:Zy8MVKupFES9NpmZ9TiHcw
+```
+
+Over
+
+*example*
+```
+did:neogov:Zy8MVKupFES9NpmZ9TiHcw;consensus=vote
+```
+
+### Minimal
+
+*example*
+```
+did:neogov:s1Io8tx8TkmaepcaFgAmDA
+```
+
+### Consensus methods
+
+#### Blocking
+
+For groups that require unanimity and use a core set of procedures to reach unified consnesus through a blocking procedure.
+
+*example*
+```
+did:neogov:consensus:block:At5KrBz6oU-Q7zQ6ffJ52Q
+```
+
+#### Vote
+
+For groups that require majority voting principle and use a core set of voting procedures to reach that majority.
+
+*example*
+```
+did:neogov:consensus:vote:cWuKnlrY8UWHSVlWhoXFew
 ```
