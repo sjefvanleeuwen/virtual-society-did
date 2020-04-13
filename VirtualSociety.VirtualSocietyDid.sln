@@ -26,7 +26,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{C0728FC8-EED
 		lib\debug\oqs.dll = lib\debug\oqs.dll
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualSociety.VirtualSocietyDidApi", "VirtualSociety.VirtualSocietyDidApi\VirtualSociety.VirtualSocietyDidApi.csproj", "{9D927186-1E32-4BA9-BEF7-46751F841FD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtualSociety.VirtualSocietyDidApi", "VirtualSociety.VirtualSocietyDidApi\VirtualSociety.VirtualSocietyDidApi.csproj", "{9D927186-1E32-4BA9-BEF7-46751F841FD2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "x86", "x86", "{383114C3-694D-45F9-AA69-FECADC4C72B1}"
+	ProjectSection(SolutionItems) = preProject
+		lib\x86\oqs.dll = lib\x86\oqs.dll
+		lib\x86\oqs.pdb = lib\x86\oqs.pdb
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -60,6 +66,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3E98C9E8-2F26-4ABB-8002-60E2B4C64689} = {82C3F036-225A-4500-B178-A71FCDF8DBBC}
+		{383114C3-694D-45F9-AA69-FECADC4C72B1} = {C0728FC8-EED4-4DB9-BB5D-056A548B6794}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E2938D71-73C5-4D62-BF0B-23C226512847}
