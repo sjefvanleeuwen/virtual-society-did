@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using NSwag.Generation.AspNetCore;
+
 
 namespace VirtualSociety.VirtualSocietyDidApi
 {
@@ -26,6 +28,14 @@ namespace VirtualSociety.VirtualSocietyDidApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddOpenApiDocument(document=>
+            {
+                document.PostProcess = d =>
+                {
+                    d.Info.Title = "Virtual Society Encryption API";
+                    d.Info.Description = "Post-Quantum proof encryption for key exchange and signing.";
+                };
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,6 +56,9 @@ namespace VirtualSociety.VirtualSocietyDidApi
             {
                 endpoints.MapControllers();
             });
+
+            app.UseOpenApi();
+            app.UseSwaggerUi3();
         }
     }
 }
