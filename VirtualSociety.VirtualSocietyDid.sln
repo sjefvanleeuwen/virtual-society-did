@@ -22,6 +22,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtualSociety.VirtualSocietyOqs.Tests", "VirtualSociety.VirtualSocietyOqs.Tests\VirtualSociety.VirtualSocietyOqs.Tests.csproj", "{CB24A47D-F4B4-4E3E-9435-D97516EFDF54}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{C0728FC8-EED4-4DB9-BB5D-056A548B6794}"
+	ProjectSection(SolutionItems) = preProject
+		lib\debug\oqs.dll = lib\debug\oqs.dll
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
