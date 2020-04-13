@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <PackageReference Include="JWT" Version="6.1.4" />
+    <PackageReference Include="NSwag.Generation.AspNetCore" Version="13.3.0" />
   </ItemGroup>
 
   <ItemGroup>
