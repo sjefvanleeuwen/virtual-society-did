@@ -11,7 +11,6 @@ namespace VirtualSociety.VirtualSocietyOqs.Tests
         public void CanDiscoverAllKeyEncapsulationMechanisms()
         {
             Assert.True(KEM.SupportedMechanisms.Count == 61);
-            
         }
     }
 }
