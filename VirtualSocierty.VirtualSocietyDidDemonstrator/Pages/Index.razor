@@ -5,3 +5,25 @@
 Welcome to your new app.
 
 <SurveyPrompt Title="How is Blazor working for you?" />
+BayBear Ephemeral Qr Code Test (not the actual payload just to test the Qr code generator)
+<button class="btn btn-primary" @onclick="CreateQrCode">Create Private Key Qr Code</button>
+<p>
+@Content
+</p>
+<pre>
+@JsonContent
+</pre>
+
+@code { 
+
+    private MarkupString Content { get; set; }
+    private string JsonContent { get; set; }
+
+    private async void CreateQrCode()
+    {
+        var controller = new DidController();
+        // Create a Ephemeral Private Key to test Qr Code (Note this is not the actual payload, just for testing)
+        JsonContent = Newtonsoft.Json.JsonConvert.SerializeObject((await controller.GenerateClientKeyPair("BabyBearEphem")).PrivateKey, Newtonsoft.Json.Formatting.Indented);
+        Content = new MarkupString(await controller.GetQrCode(JsonContent));
+    }
+}

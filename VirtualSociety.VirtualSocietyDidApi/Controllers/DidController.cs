@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using QRCoder;
 using VirtualSociety.VirtualSocietyOqs;
 
 namespace VirtualSociety.VirtualSocietyDidApi.Controllers
@@ -12,12 +13,33 @@ namespace VirtualSociety.VirtualSocietyDidApi.Controllers
     [Route("[controller]")]
     public class DidController : ControllerBase
     {
-        private readonly ILogger<DidController> _logger;
-
-        public DidController(ILogger<DidController> logger)
+        public DidController()
         {
-            _logger = logger;
         }
+
+        [HttpPost("qr-code")]
+        public async Task<string> GetQrCode([NakedBody] string payload)
+        {
+            QRCodeGenerator qrGenerator = new QRCodeGenerator();
+            QRCodeData qrCodeData = qrGenerator.CreateQrCode(payload, QRCodeGenerator.ECCLevel.Q);
+            SvgQRCode qrCodePng = new SvgQRCode(qrCodeData);
+            return qrCodePng.GetGraphic(new System.Drawing.Size(320,320));
+            /*
+            switch (qrType)
+            {
+                case QrType.Png:
+                    PngByteQRCode qrCodePng = new PngByteQRCode(qrCodeData);
+                    return qrCodePng.GetGraphic(20);
+                case QrType.Svg:
+                    SvgQRCode qrCodeSvg = new SvgQRCode(qrCodeData);
+                    return qrCodeSvg.GetGraphic(20);
+                default:
+                    throw new NotImplementedException();
+            }
+            */
+        }
+
+
 
         [HttpGet("key-mechanisms")]
         public async Task<IEnumerable<string>> GetKeyMechanisms()
