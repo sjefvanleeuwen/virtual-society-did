@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 
-namespace NeoGovern.NeoGovernDid
+namespace VirtualSociety.VirtualSocietyDid
 {
     public class DidDocument
     {

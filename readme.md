@@ -1,5 +1,5 @@
 <p align=center>
-    <img src="./doc/img/neogovern.png" />
+    <img src="./doc/img/logo.svg" />
 </p>
 <br/>
 
@@ -15,7 +15,7 @@ production.
 
 ## Quantum Proof key infrastructure
 
-NeoGovern follows the open-quantum-safe workgroup and is informed by the NIST Post-Quantum Cryptography Standardization project.
+VirtualSociety follows the open-quantum-safe workgroup and is informed by the NIST Post-Quantum Cryptography Standardization project.
 
 NIST can be found at: https://csrc.nist.gov/Projects/Post-Quantum-Cryptography/Post-Quantum-Cryptography-Standardization
 
@@ -53,7 +53,7 @@ NIST can be found at: https://csrc.nist.gov/Projects/Post-Quantum-Cryptography/P
 ## Method-Specific DID URL Parameters
 
 DID Url parameters as described under paragraph 5.2.3 https://www.w3.org/TR/did-core/#method-specific-did-url-parameters in the W3C specification are implemented with preference to 
-**DID method namespaces** over method-specific parameters within the **did:neogov** namespace.
+**DID method namespaces** over method-specific parameters within the **did:vsoc** namespace.
 Unique Identifiers are created by implementing the Universally Unique Identifier (UUID) as defined by [RFC4122] https://tools.ietf.org/html/rfc4122.
 in a 22 character alphanumeric format (short uuid).
 
@@ -61,21 +61,21 @@ The following is prefered:
 
 *example*
 ```
-did:neogov:consensus:vote:Zy8MVKupFES9NpmZ9TiHcw
+did:vsoc:consensus:vote:Zy8MVKupFES9NpmZ9TiHcw
 ```
 
 Over
 
 *example*
 ```
-did:neogov:Zy8MVKupFES9NpmZ9TiHcw;consensus=vote
+did:vsoc:Zy8MVKupFES9NpmZ9TiHcw;consensus=vote
 ```
 
 ### Minimal
 
 *example*
 ```
-did:neogov:s1Io8tx8TkmaepcaFgAmDA
+did:vsoc:s1Io8tx8TkmaepcaFgAmDA
 ```
 
 ### Consensus methods
@@ -86,7 +86,7 @@ For groups that require unanimity and use a core set of procedures to reach unif
 
 *example*
 ```
-did:neogov:consensus:block:At5KrBz6oU-Q7zQ6ffJ52Q
+did:vsoc:consensus:block:At5KrBz6oU-Q7zQ6ffJ52Q
 ```
 
 #### Vote
@@ -95,5 +95,5 @@ For groups that require majority voting principle and use a core set of voting p
 
 *example*
 ```
-did:neogov:consensus:vote:cWuKnlrY8UWHSVlWhoXFew
+did:vsoc:consensus:vote:cWuKnlrY8UWHSVlWhoXFew
 ```

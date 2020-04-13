@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Runtime.InteropServices;
 
-namespace NeoGovern.NeoGovernOqs
+namespace VirtualSociety.VirtualSocietyOqs
 {
     /// <summary>
     /// Offers post-quantum signature mechanisms.

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeoGovern.NeoGovernDid", "NeoGovern.NeoGovernDid\NeoGovern.NeoGovernDid.csproj", "{BA5D35CA-E9F6-4E95-AFAC-DB21C87D9806}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtualSociety.VirtualSocietyDid", "VirtualSociety.VirtualSocietyDid\VirtualSociety.VirtualSocietyDid.csproj", "{BA5D35CA-E9F6-4E95-AFAC-DB21C87D9806}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CA64D0B3-4600-4BB8-A9C1-D6BEF21BCD57}"
 	ProjectSection(SolutionItems) = preProject
@@ -15,11 +15,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{82C3F036-225
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "img", "img", "{3E98C9E8-2F26-4ABB-8002-60E2B4C64689}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeoGovern.NeoGovernDid.Tests", "NeoGovern.NeoGovernDid.Tests\NeoGovern.NeoGovernDid.Tests.csproj", "{30C0F094-2800-4DBD-8D48-43EEF4EDCBD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtualSociety.VirtualSocietyDid.Tests", "VirtualSociety.VirtualSocietyDid.Tests\VirtualSociety.VirtualSocietyDid.Tests.csproj", "{30C0F094-2800-4DBD-8D48-43EEF4EDCBD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeoGovern.NeoGovernOqs", "NeoGovern.NeoGovernOqs\NeoGovern.NeoGovernOqs.csproj", "{2F1FA441-C4EF-4382-A678-D266BB81A9D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtualSociety.VirtualSocietyOqs", "VirtualSociety.VirtualSocietyOqs\VirtualSociety.VirtualSocietyOqs.csproj", "{2F1FA441-C4EF-4382-A678-D266BB81A9D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeoGovern.NeoGovernOqs.Tests", "NeoGovern.NeoGovernOqs.Tests\NeoGovern.NeoGovernOqs.Tests.csproj", "{CB24A47D-F4B4-4E3E-9435-D97516EFDF54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtualSociety.VirtualSocietyOqs.Tests", "VirtualSociety.VirtualSocietyOqs.Tests\VirtualSociety.VirtualSocietyOqs.Tests.csproj", "{CB24A47D-F4B4-4E3E-9435-D97516EFDF54}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

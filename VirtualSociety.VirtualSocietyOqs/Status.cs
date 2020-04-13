@@ -1,4 +1,4 @@
-﻿namespace NeoGovern.NeoGovernOqs
+﻿namespace VirtualSociety.VirtualSocietyOqs
 {
     /// <summary>
     /// The OQS status code.

@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NeoGovern.NeoGovernOqs\NeoGovern.NeoGovernOqs.csproj" />
+    <ProjectReference Include="..\NeoGovern.NeoGovernOqs\VirtualSociety.VirtualSocietyOqs.csproj" />
   </ItemGroup>
 
 </Project>

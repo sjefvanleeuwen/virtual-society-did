@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NeoGovern.NeoGovernOqs
+namespace VirtualSociety.VirtualSocietyOqs
 {
     /// <summary>
     /// An OQS exception.

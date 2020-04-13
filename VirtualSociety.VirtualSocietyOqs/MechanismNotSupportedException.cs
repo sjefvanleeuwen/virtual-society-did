@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NeoGovern.NeoGovernOqs
+namespace VirtualSociety.VirtualSocietyOqs
 {
     /// <summary>
     /// Thrown when a requested mechanism is not supported by OQS.

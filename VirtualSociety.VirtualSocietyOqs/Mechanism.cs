@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NeoGovern.NeoGovernOqs
+namespace VirtualSociety.VirtualSocietyOqs
 {
     /// <summary>
     /// Base class for OQS mechanisms.

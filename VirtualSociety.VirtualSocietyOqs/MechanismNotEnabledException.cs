@@ -1,4 +1,4 @@
-﻿namespace NeoGovern.NeoGovernOqs
+﻿namespace VirtualSociety.VirtualSocietyOqs
 {
     /// <summary>
     /// Thrown when a requested mechanism is supported but not enabled by the OQS runtime.
