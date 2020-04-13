@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using VirtualSociety.VirtualSocietyOqs;
@@ -18,14 +19,29 @@ namespace VirtualSociety.VirtualSocietyDidApi.Controllers
             _logger = logger;
         }
 
-        [HttpGet]
-        public IEnumerable<string> Get()
+        [HttpGet("key-mechanisms")]
+        public async Task<IEnumerable<string>> GetKeyMechanisms()
         {
             return KEM.SupportedMechanisms;
         }
 
-        [HttpGet("client-info/{id}")]
-        public KEM ClientInfo(string id)
+        [HttpGet("sig-mechanisms")]
+        public async Task<IEnumerable<string>> GetSigMechanisms()
+        {
+            return Sig.EnabledMechanisms;
+        }
+
+        [HttpGet("sig-info/{id}")]
+        public async Task<Sig> SigInfo(string id)
+        {
+            using (Sig Signer = new Sig(id))
+            {
+                return Signer;
+            }
+        }
+
+        [HttpGet("key-info/{id}")]
+        public async Task<KEM> KeyInfo(string id)
         {
             using (KEM client = new KEM(id))
             {
@@ -34,7 +50,7 @@ namespace VirtualSociety.VirtualSocietyDidApi.Controllers
         }
 
         [HttpGet("GenerateClientKeyPair/{id}")]
-        public ClientKeyPair GenerateClientKeyPair(string id)
+        public async Task<ClientKeyPair> GenerateClientKeyPair(string id)
         {
             using (KEM client = new KEM(id),
                        server = new KEM(id))
