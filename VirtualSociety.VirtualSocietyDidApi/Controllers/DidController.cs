@@ -24,6 +24,15 @@ namespace VirtualSociety.VirtualSocietyDidApi.Controllers
             return KEM.SupportedMechanisms;
         }
 
+        [HttpGet("client-info/{id}")]
+        public KEM ClientInfo(string id)
+        {
+            using (KEM client = new KEM(id))
+            {
+                return client;
+            }
+        }
+
         [HttpGet("GenerateClientKeyPair/{id}")]
         public ClientKeyPair GenerateClientKeyPair(string id)
         {
