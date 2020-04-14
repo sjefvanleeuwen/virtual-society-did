@@ -8,7 +8,9 @@
             PrivateKey = privateKey;
         }
 
-        public byte[] PublicKey { get; }
-        public byte[] PrivateKey { get; }
+        public ClientKeyPair() { }
+
+        public byte[] PublicKey { get; set; }
+        public byte[] PrivateKey { get; set; }
     }
 }
