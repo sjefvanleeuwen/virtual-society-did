@@ -1,4 +1,6 @@
-﻿@page "/"
+﻿@using System.Net.Http
+@using System.Net.Http.Formatting
+@page "/"
 
 <h1>Hello, world!</h1>
 
@@ -8,22 +10,24 @@ Welcome to your new app.
 BayBear Ephemeral Qr Code Test (not the actual payload just to test the Qr code generator)
 <button class="btn btn-primary" @onclick="CreateQrCode">Create Private Key Qr Code</button>
 <p>
-@Content
+    @Content
 </p>
 <pre>
 @JsonContent
 </pre>
 
-@code { 
+@code {
 
     private MarkupString Content { get; set; }
     private string JsonContent { get; set; }
 
     private async void CreateQrCode()
     {
-        var controller = new DidController();
-        // Create a Ephemeral Private Key to test Qr Code (Note this is not the actual payload, just for testing)
-        JsonContent = Newtonsoft.Json.JsonConvert.SerializeObject((await controller.GenerateClientKeyPair("BabyBearEphem")).PrivateKey, Newtonsoft.Json.Formatting.Indented);
-        Content = new MarkupString(await controller.GetQrCode(JsonContent));
+        using (var Http = new HttpClient())
+        {
+            var client = new DidClient(Http);
+            var keypair = await client.GenerateClientKeyPairAsync("BabyBear");
+            Content = new MarkupString(await client.GetQrCodeAsync(Convert.ToBase64String(keypair.PrivateKey)));
+        }
     }
 }
