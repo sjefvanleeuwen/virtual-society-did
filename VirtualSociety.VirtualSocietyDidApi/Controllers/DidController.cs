@@ -17,6 +17,23 @@ namespace VirtualSociety.VirtualSocietyDidApi.Controllers
         {
         }
 
+        [HttpPost("sign")]
+        public async Task<VerifierSignature> Sign([FromBody] SignMessage message)
+        {
+            using (Sig sign = new Sig(message.SigMechanism))
+            {
+                byte[] clientMessage = new System.Text.UTF8Encoding().GetBytes(message.Message);
+                // Generate the signing key pair
+                byte[] public_key;
+                byte[] secret_key;
+                sign.keypair(out public_key, out secret_key);
+                // Sign the message
+                byte[] signature;
+                sign.sign(out signature, clientMessage, secret_key);
+                return new VerifierSignature() { SigMechanism = message.SigMechanism, PublicKey = public_key, Signature = signature };
+            }
+        }
+
         [HttpPost("qr-code")]
         public async Task<string> GetQrCode([NakedBody] string payload)
         {
