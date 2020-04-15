@@ -17,6 +17,16 @@ namespace VirtualSociety.VirtualSocietyDidApi.Controllers
         {
         }
 
+        [HttpPost("verify-signature")]
+        public async Task<bool> VerifySignature([FromBody] VerifySignature message)
+        {
+            using (var verifier = new Sig(message.SigMechanism))
+            {
+                byte[] messageBytes = new System.Text.UTF8Encoding().GetBytes(message.Message);
+                return verifier.verify(messageBytes, message.Signature, message.PublicKey);
+            }
+        }
+
         [HttpPost("sign")]
         public async Task<VerifierSignature> Sign([FromBody] SignMessage message)
         {
