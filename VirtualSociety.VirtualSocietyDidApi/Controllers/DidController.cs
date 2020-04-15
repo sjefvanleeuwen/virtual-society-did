@@ -53,6 +53,19 @@ namespace VirtualSociety.VirtualSocietyDidApi.Controllers
             }
         }
 
+        [HttpPost("decapsulate-shared-secret")]
+        public async Task<ClientSharedSecret> DecapsulateSharedSecret([FromBody] SecretKey secretKey)
+        {
+            // The client decapsulates the shared secret
+            byte[] clientSharedSecret;
+            using (KEM client = new KEM(secretKey.KeyMechanism))
+            {
+                byte[] secret_key;
+                client.decaps(out clientSharedSecret, secretKey.CipherText, secretKey.Key);
+                return new ClientSharedSecret() { SharedSecret= clientSharedSecret };
+            }
+        }
+
         [HttpGet("key-mechanisms")]
         public async Task<IEnumerable<string>> GetKeyMechanisms()
         {
