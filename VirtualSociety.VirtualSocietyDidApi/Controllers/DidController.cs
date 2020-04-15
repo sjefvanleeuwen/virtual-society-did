@@ -39,7 +39,19 @@ namespace VirtualSociety.VirtualSocietyDidApi.Controllers
             */
         }
 
-
+        [HttpPost("encapsulate-shared-secret")]
+        public async Task<ServerSharedSecret> EncapsulateSharedSecret([FromBody] PublicKey publicKey)
+        {
+            // The server generates and encapsulates the shared secret
+            byte[] ciphertext;
+            byte[] serverSharedSecret;
+            using (KEM server = new KEM(publicKey.KeyMechanism))
+            {
+                byte[] secret_key;
+                server.encaps(out ciphertext, out serverSharedSecret, publicKey.Key);
+                return new ServerSharedSecret() { Ciphertext = ciphertext, SharedSecret = serverSharedSecret };
+            }
+        }
 
         [HttpGet("key-mechanisms")]
         public async Task<IEnumerable<string>> GetKeyMechanisms()
