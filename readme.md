@@ -97,3 +97,32 @@ For groups that require majority voting principle and use a core set of voting p
 ```
 did:vsoc:consensus:vote:cWuKnlrY8UWHSVlWhoXFew
 ```
+
+### Algorithmic methods
+
+For code generated for exascale computing (HPC) purposes the method is as follows:
+
+*example*
+```
+did:vsoc:gen:actor:y5CZFpo2d02O0utSn6Qhxw
+```
+
+Specifically these are virtual actors running on the Morstead implementation and are code generated and signed from DSL inputs.
+The code also bears the mark refering its Did.
+
+```CSHARP
+/*
+    /\     _____ _____ _____ _____ _____ _____ _____ ____  
+  _(  )_  |     |     | __  |   __|_   _|   __|  _  |    \ 
+ ( `==' ) | | | |  |  |    -|__   | | | |   __|     |  |  |
+   '\/`   |_|_|_|_____|__|__|_____| |_| |_____|__|__|____/ 
+
+          Generated Virtual Actor from rule DSL.
+          Copyright© {DateTime.Now.Year} Virtual Society under MIT license
+          Grain Generated at: {DateTime.UtcNow}
+          did:vsoc:gen:actor:Zy8MVKupFES9NpmZ9TiHcw
+*/
+```
+
+
+
