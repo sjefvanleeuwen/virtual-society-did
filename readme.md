@@ -78,7 +78,7 @@ did:vsoc:Zy8MVKupFES9NpmZ9TiHcw;consensus=vote
 did:vsoc:s1Io8tx8TkmaepcaFgAmDA
 ```
 
-### Consensus methods
+### Consensus method namespaces
 
 #### Blocking
 
@@ -98,9 +98,9 @@ For groups that require majority voting principle and use a core set of voting p
 did:vsoc:consensus:vote:cWuKnlrY8UWHSVlWhoXFew
 ```
 
-### Algorithmic methods
+### Algorithmic method namespaces
 
-For code generated for exascale computing (HPC) purposes the method is as follows:
+For code generated for exascale computing (HPC) purposes the method namespace is as follows:
 
 *example*
 ```
