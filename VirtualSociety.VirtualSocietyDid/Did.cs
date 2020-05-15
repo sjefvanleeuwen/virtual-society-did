@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Text.RegularExpressions;
+using Vs.Did.Abstractions.Interfaces;
 
 namespace Vs.Did
 {
@@ -24,7 +25,7 @@ namespace Vs.Did
         }
     }
 
-    public class Did
+    public class Did : IDid
     {
         public string Scheme => "did";
         public string Method { get; set; }
