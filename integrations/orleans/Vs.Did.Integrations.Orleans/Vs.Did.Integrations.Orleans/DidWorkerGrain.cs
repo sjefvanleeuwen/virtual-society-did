@@ -14,7 +14,7 @@ namespace Vs.Did.Integrations.Orleans
     {
         public async Task<IDid> CreateDid(IMethodNamespace type)
         {
-            return new Did(type.Namespace);
+            return await Task.Run(() => new Did(type.Namespace));
         }
     }
 }
