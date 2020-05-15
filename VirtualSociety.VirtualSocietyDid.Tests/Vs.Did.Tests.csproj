@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\VirtualSociety.VirtualSocietyDid\VirtualSociety.VirtualSocietyDid.csproj" />
+    <ProjectReference Include="..\VirtualSociety.VirtualSocietyDid\Vs.Did.csproj" />
   </ItemGroup>
 
 </Project>

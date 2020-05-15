@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtualSociety.VirtualSocietyDid", "VirtualSociety.VirtualSocietyDid\VirtualSociety.VirtualSocietyDid.csproj", "{BA5D35CA-E9F6-4E95-AFAC-DB21C87D9806}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vs.Did", "VirtualSociety.VirtualSocietyDid\Vs.Did.csproj", "{BA5D35CA-E9F6-4E95-AFAC-DB21C87D9806}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CA64D0B3-4600-4BB8-A9C1-D6BEF21BCD57}"
 	ProjectSection(SolutionItems) = preProject
@@ -15,18 +15,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{82C3F036-225
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "img", "img", "{3E98C9E8-2F26-4ABB-8002-60E2B4C64689}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtualSociety.VirtualSocietyDid.Tests", "VirtualSociety.VirtualSocietyDid.Tests\VirtualSociety.VirtualSocietyDid.Tests.csproj", "{30C0F094-2800-4DBD-8D48-43EEF4EDCBD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vs.Did.Tests", "VirtualSociety.VirtualSocietyDid.Tests\Vs.Did.Tests.csproj", "{30C0F094-2800-4DBD-8D48-43EEF4EDCBD0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtualSociety.VirtualSocietyOqs", "VirtualSociety.VirtualSocietyOqs\VirtualSociety.VirtualSocietyOqs.csproj", "{2F1FA441-C4EF-4382-A678-D266BB81A9D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vs.Did.Oqs", "VirtualSociety.VirtualSocietyOqs\Vs.Did.Oqs.csproj", "{2F1FA441-C4EF-4382-A678-D266BB81A9D4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtualSociety.VirtualSocietyOqs.Tests", "VirtualSociety.VirtualSocietyOqs.Tests\VirtualSociety.VirtualSocietyOqs.Tests.csproj", "{CB24A47D-F4B4-4E3E-9435-D97516EFDF54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vs.Did.Oqs.Tests", "VirtualSociety.VirtualSocietyOqs.Tests\Vs.Did.Oqs.Tests.csproj", "{CB24A47D-F4B4-4E3E-9435-D97516EFDF54}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{C0728FC8-EED4-4DB9-BB5D-056A548B6794}"
 	ProjectSection(SolutionItems) = preProject
 		lib\debug\oqs.dll = lib\debug\oqs.dll
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtualSociety.VirtualSocietyDidApi", "VirtualSociety.VirtualSocietyDidApi\VirtualSociety.VirtualSocietyDidApi.csproj", "{9D927186-1E32-4BA9-BEF7-46751F841FD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vs.Did.OpenApi", "VirtualSociety.VirtualSocietyDidApi\Vs.Did.OpenApi.csproj", "{9D927186-1E32-4BA9-BEF7-46751F841FD2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "x86", "x86", "{383114C3-694D-45F9-AA69-FECADC4C72B1}"
 	ProjectSection(SolutionItems) = preProject
@@ -34,7 +34,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "x86", "x86", "{383114C3-694
 		lib\x86\oqs.pdb = lib\x86\oqs.pdb
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualSocierty.VirtualSocietyDidDemonstrator", "VirtualSocierty.VirtualSocietyDidDemonstrator\VirtualSocierty.VirtualSocietyDidDemonstrator.csproj", "{9909366E-4430-4235-8D77-EE21985CFE54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vs.Did.Demonstrator", "VirtualSocierty.VirtualSocietyDidDemonstrator\Vs.Did.Demonstrator.csproj", "{9909366E-4430-4235-8D77-EE21985CFE54}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

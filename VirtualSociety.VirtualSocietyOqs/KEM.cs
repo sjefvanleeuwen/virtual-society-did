@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Runtime.InteropServices;
 
-namespace VirtualSociety.VirtualSocietyOqs
+namespace Vs.Did.Oqs
 {
     /// <summary>
     /// Offers post-quantum Key Encapsulation Mechanisms (KEM).

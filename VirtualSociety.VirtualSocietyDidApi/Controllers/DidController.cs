@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using QRCoder;
-using VirtualSociety.VirtualSocietyOqs;
+using Vs.Did.Oqs;
 
-namespace VirtualSociety.VirtualSocietyDidApi.Controllers
+namespace Vs.Did.OpenApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -50,7 +47,7 @@ namespace VirtualSociety.VirtualSocietyDidApi.Controllers
             QRCodeGenerator qrGenerator = new QRCodeGenerator();
             QRCodeData qrCodeData = qrGenerator.CreateQrCode(payload, QRCodeGenerator.ECCLevel.Q);
             SvgQRCode qrCodePng = new SvgQRCode(qrCodeData);
-            return qrCodePng.GetGraphic(new System.Drawing.Size(320,320));
+            return qrCodePng.GetGraphic(new System.Drawing.Size(320, 320));
             /*
             switch (qrType)
             {
@@ -89,7 +86,7 @@ namespace VirtualSociety.VirtualSocietyDidApi.Controllers
             {
                 byte[] secret_key;
                 client.decaps(out clientSharedSecret, secretKey.CipherText, secretKey.Key);
-                return new ClientSharedSecret() { SharedSecret= clientSharedSecret };
+                return new ClientSharedSecret() { SharedSecret = clientSharedSecret };
             }
         }
 

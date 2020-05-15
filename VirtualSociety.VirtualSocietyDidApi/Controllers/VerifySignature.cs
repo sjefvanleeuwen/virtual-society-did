@@ -1,4 +1,4 @@
-﻿namespace VirtualSociety.VirtualSocietyDidApi.Controllers
+﻿namespace Vs.Did.OpenApi.Controllers
 {
     public class VerifySignature
     {

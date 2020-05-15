@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Linq;
+using Vs.Did;
 using Xunit;
 
-namespace VirtualSociety.VirtualSocietyDid.Tests
+namespace Vs.Did.Tests
 {
     public class DidTests
     {
@@ -45,7 +46,7 @@ namespace VirtualSociety.VirtualSocietyDid.Tests
         [Fact]
         public async void ShouldbeAllLowerCaseExceptMethodIdentifier()
         {
-            var did = new Did("gEn:acTor","ExAMPle");
+            var did = new Did("gEn:acTor", "ExAMPle");
             Assert.Equal($"did:example:gen:actor:{did.MethodIdentifier}", did.ToString());
         }
     }

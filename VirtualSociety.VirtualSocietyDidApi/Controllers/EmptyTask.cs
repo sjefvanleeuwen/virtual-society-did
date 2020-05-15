@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
-namespace VirtualSociety.VirtualSocietyDidApi.Controllers
+namespace Vs.Did.OpenApi.Controllers
 {
     public class EmptyTask
     {
         public static Task Start()
         {
             var taskSource = new TaskCompletionSource<AsyncVoid>();
-            taskSource.SetResult(default(AsyncVoid));
+            taskSource.SetResult(default);
             return taskSource.Task as Task;
         }
 

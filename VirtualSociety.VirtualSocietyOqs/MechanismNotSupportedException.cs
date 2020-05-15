@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace VirtualSociety.VirtualSocietyOqs
+namespace Vs.Did.Oqs
 {
     /// <summary>
     /// Thrown when a requested mechanism is not supported by OQS.

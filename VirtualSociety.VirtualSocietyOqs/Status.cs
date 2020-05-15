@@ -1,4 +1,4 @@
-﻿namespace VirtualSociety.VirtualSocietyOqs
+﻿namespace Vs.Did.Oqs
 {
     /// <summary>
     /// The OQS status code.

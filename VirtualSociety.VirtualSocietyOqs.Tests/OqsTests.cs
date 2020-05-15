@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Xunit;
+﻿using Xunit;
 
-namespace VirtualSociety.VirtualSocietyOqs.Tests
+namespace Vs.Did.Oqs.Tests
 {
     public class OqsTests
     {

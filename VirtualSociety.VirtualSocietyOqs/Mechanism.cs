@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace VirtualSociety.VirtualSocietyOqs
+namespace Vs.Did.Oqs
 {
     /// <summary>
     /// Base class for OQS mechanisms.

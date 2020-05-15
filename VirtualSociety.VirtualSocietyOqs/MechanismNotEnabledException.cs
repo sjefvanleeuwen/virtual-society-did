@@ -1,4 +1,4 @@
-﻿namespace VirtualSociety.VirtualSocietyOqs
+﻿namespace Vs.Did.Oqs
 {
     /// <summary>
     /// Thrown when a requested mechanism is supported but not enabled by the OQS runtime.

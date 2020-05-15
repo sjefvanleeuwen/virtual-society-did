@@ -1,13 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Web.Http.Controllers;
 
-namespace VirtualSociety.VirtualSocietyDidApi.Controllers
+namespace Vs.Did.OpenApi.Controllers
 {
     /// <summary>
     /// Reads the Request body into a string/byte[] and

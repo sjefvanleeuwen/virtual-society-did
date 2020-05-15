@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\VirtualSociety.VirtualSocietyDidApi\VirtualSociety.VirtualSocietyDidApi.csproj" />
+    <ProjectReference Include="..\VirtualSociety.VirtualSocietyDidApi\Vs.Did.OpenApi.csproj" />
   </ItemGroup>
 
 </Project>

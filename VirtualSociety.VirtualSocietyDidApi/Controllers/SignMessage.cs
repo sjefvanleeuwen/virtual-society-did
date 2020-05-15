@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace VirtualSociety.VirtualSocietyDidApi.Controllers
+﻿namespace Vs.Did.OpenApi.Controllers
 {
     public class SignMessage
     {

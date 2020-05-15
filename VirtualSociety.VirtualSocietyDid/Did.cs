@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace VirtualSociety.VirtualSocietyDid
+namespace Vs.Did
 {
     /// </summary>
     public static class DidUriExtension
@@ -27,7 +27,7 @@ namespace VirtualSociety.VirtualSocietyDid
     public class Did
     {
         public string Scheme => "did";
-        public string Method {get;set;}
+        public string Method { get; set; }
         public string MethodIdentifier { get; set; }
         public string MethodNameSpace { get; set; }
 
@@ -61,7 +61,7 @@ namespace VirtualSociety.VirtualSocietyDid
         public string ToString()
         {
             return string.Join(":",
-                (new []{Scheme,Method,MethodNameSpace,MethodIdentifier})
+                (new[] { Scheme, Method, MethodNameSpace, MethodIdentifier })
                 .Where(s => !string.IsNullOrEmpty(s)));
         }
     }

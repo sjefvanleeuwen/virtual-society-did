@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using Xunit;
 
-namespace VirtualSociety.VirtualSocietyDid.Tests
+namespace Vs.Did.Tests
 {
     public class DidDocumentModelTests
     {

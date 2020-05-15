@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\VirtualSociety.VirtualSocietyOqs\VirtualSociety.VirtualSocietyOqs.csproj" />
+    <ProjectReference Include="..\VirtualSociety.VirtualSocietyOqs\Vs.Did.Oqs.csproj" />
   </ItemGroup>
 
 
